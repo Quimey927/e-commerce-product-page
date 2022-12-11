@@ -1,0 +1,136 @@
+.product {
+  padding: 1.5rem;
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+.company {
+  text-transform: uppercase;
+  color: hsl(26, 100%, 55%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.title {
+  color: hsl(220, 13%, 13%);
+}
+
+.description {
+  color: hsl(219, 9%, 45%);
+  line-height: 1.8;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-and-discount {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: hsl(220, 13%, 13%);
+}
+
+.percentage {
+  font-size: 0.7rem;
+  font-weight: 900;
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  color: hsl(26, 100%, 55%);
+  background-color: rgba(0, 0, 0, 0.06);
+  border-radius: 5px;
+  margin-inline: 1rem;
+}
+
+.discount {
+  color: hsl(220, 14%, 75%);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: line-through;
+}
+
+.add-to-cart {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.add-to-cart > button {
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-block: 0.8rem;
+  cursor: pointer;
+}
+
+.add-to-cart > button:hover {
+  opacity: 0.7;
+}
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.symbols {
+  border: none;
+  background-color: transparent;
+  color: hsl(26, 100%, 55%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.symbols:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 750px) {
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .prices {
+    display: block;
+  }
+
+  .discount {
+    display: block;
+    margin-top: 0.8rem;
+  }
+
+  .add-to-cart {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .add-to-cart > * {
+    flex: 1;
+  }
+
+  .counter {
+    margin: 0;
+  }
+}

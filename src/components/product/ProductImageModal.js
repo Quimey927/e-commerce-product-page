@@ -12,7 +12,10 @@ const ProductImageModal = (props) => {
   const [isNextIconActive, setIsNextIconActive] = useState(false);
 
   return (
-    <Modal className={classes['product-image-modal']}>
+    <Modal
+      className={classes['product-image-modal']}
+      onCloseModal={props.onCloseModal}
+    >
       <button
         className={classes.close}
         onClick={props.onCloseModal}

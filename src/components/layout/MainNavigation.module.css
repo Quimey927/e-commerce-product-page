@@ -26,12 +26,16 @@
   color: hsl(219, 9%, 45%);
 }
 
-.nav-item {
+.nav-item:is(:hover, :focus) {
+  color: var(--color-primary);
+}
+
+.active-link {
   cursor: pointer;
   position: relative;
 }
 
-.nav-item::after {
+.active-link::after {
   content: '';
   width: 100%;
   height: 3px;
@@ -44,7 +48,7 @@
   transform-origin: bottom;
 }
 
-.nav-item:hover::after {
+.active-link:hover::after {
   transform: scale(1);
 }
 
